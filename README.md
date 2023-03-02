@@ -42,3 +42,7 @@ docker run -d --name commonlit-readability-container -p 80:80 commonlit-readabil
 curl -X POST http://127.0.0.1/score -H "Content-Type: application/json" -d "{\"text\":\"This is simple test text\"}"
 ```
 
+## Check deployed model on Google Cloud
+```bash
+curl -X POST https://commonlit-web-cqeyyrdvka-ew.a.run.app/score -H "Content-Type: application/json" -d "{\"text\":\"This is simple test text\"}"
+```
